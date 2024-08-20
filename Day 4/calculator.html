@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <h3>Enter 1 st Number</h3><input type ="text" id="in1" /><BR>
+    <h3>Enter 2 nd  Number</h3>
+    <input type ="text" id="in2" /><BR><br>
+    <button onclick="add()">ADDITION</button>
+    <button onclick="sub()">SUBTRACTION</button>
+    <button onclick="mul()">MULTIPLICATION</button>
+    <button onclick="div()">DIVISION</button>
+    <h1>RESULT</h1><h1 id="result"></h1>
+
+    <script>
+        function add(){
+            let in1 = document.getElementById("in1")
+            let in2 = document.getElementById("in2")
+            in1 = in1.value;
+            in2 = in2.value;
+            addiction = Number(in1) + Number(in2)
+            document.getElementById("result").innerHTML = addiction;
+        }
+        function sub(){
+            let in1 = document.getElementById("in1")
+            let in2 = document.getElementById("in2")
+            in1 = in1.value;
+            in2 = in2.value;
+            subtract = Number(in1) - Number(in2)
+            document.getElementById("result").innerHTML = subtract;
+        }
+        function mul(){
+            let in1 = document.getElementById("in1")
+            let in2 = document.getElementById("in2")
+            in1 = in1.value;
+            in2 = in2.value;
+            subtract = Number(in1) * Number(in2)
+            document.getElementById("result").innerHTML = subtract;
+        }
+        function div(){
+            let in1 = document.getElementById("in1")
+            let in2 = document.getElementById("in2")
+            in1 = in1.value;
+            in2 = in2.value;
+            subtract = Number(in1) / Number(in2)
+            document.getElementById("result").innerHTML = subtract;
+        }
+    </script>
+</body>
+</html>
+
+

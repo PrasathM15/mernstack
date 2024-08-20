@@ -1,0 +1,112 @@
+
+MURUGAN@DESKTOP-J420CGP MINGW64 ~/Desktop/Mern stack
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+MURUGAN@DESKTOP-J420CGP MINGW64 ~/Desktop/Mern stack
+$ git init
+Initialized empty Git repository in C:/Users/MURUGAN/Desktop/Mern stack/.git/
+
+MURUGAN@DESKTOP-J420CGP MINGW64 ~/Desktop/Mern stack (master)
+$ git add .
+warning: in the working copy of 'vaishnav/app/.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vaishnav/app/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vaishnav/app/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vaishnav/app/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vaishnav/app/public/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vaishnav/app/public/manifest.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vaishnav/app/public/robots.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vaishnav/app/src/App.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vaishnav/app/src/App.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vaishnav/app/src/App.test.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vaishnav/app/src/index.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vaishnav/app/src/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vaishnav/app/src/reportWebVitals.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vaishnav/app/src/setupTests.js', LF will be replaced by CRLF the next time Git touches it
+
+MURUGAN@DESKTOP-J420CGP MINGW64 ~/Desktop/Mern stack (master)
+$ git commit -m "initiak commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'MURUGAN@DESKTOP-J420CGP.(none)')
+
+MURUGAN@DESKTOP-J420CGP MINGW64 ~/Desktop/Mern stack (master)
+$ git commit -m "initial commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'MURUGAN@DESKTOP-J420CGP.(none)')
+
+MURUGAN@DESKTOP-J420CGP MINGW64 ~/Desktop/Mern stack (master)
+$ ^C
+
+MURUGAN@DESKTOP-J420CGP MINGW64 ~/Desktop/Mern stack (master)
+$ git config --global user.email "iamprasath15@gmail.com"
+
+MURUGAN@DESKTOP-J420CGP MINGW64 ~/Desktop/Mern stack (master)
+$ git config --global user.name "Prasath M"
+
+MURUGAN@DESKTOP-J420CGP MINGW64 ~/Desktop/Mern stack (master)
+$ git commit -m "initial commit"
+[master (root-commit) 310123b] initial commit
+ 23 files changed, 20263 insertions(+)
+ create mode 100644 vaishnav/app/.gitignore
+ create mode 100644 vaishnav/app/README.md
+ create mode 100644 vaishnav/app/package-lock.json
+ create mode 100644 vaishnav/app/package.json
+ create mode 100644 vaishnav/app/public/favicon.ico
+ create mode 100644 vaishnav/app/public/index.html
+ create mode 100644 vaishnav/app/public/logo192.png
+ create mode 100644 vaishnav/app/public/logo512.png
+ create mode 100644 vaishnav/app/public/manifest.json
+ create mode 100644 vaishnav/app/public/robots.txt
+ create mode 100644 vaishnav/app/src/About.js
+ create mode 100644 vaishnav/app/src/App.css
+ create mode 100644 vaishnav/app/src/App.js
+ create mode 100644 vaishnav/app/src/App.test.js
+ create mode 100644 vaishnav/app/src/Home.js
+ create mode 100644 vaishnav/app/src/index.css
+ create mode 100644 vaishnav/app/src/index.js
+ create mode 100644 vaishnav/app/src/logo.svg
+ create mode 100644 vaishnav/app/src/reportWebVitals.js
+ create mode 100644 vaishnav/app/src/setupTests.js
+ create mode 100644 vaishnav/html/tags.html
+ create mode 100644 vaishnav/html/tags2.html
+ create mode 100644 vaishnav/javascript/variable.html
+
+MURUGAN@DESKTOP-J420CGP MINGW64 ~/Desktop/Mern stack (master)
+$ git remote add origin https://github.com/Prasathlonelyking/mernstack.git
+
+MURUGAN@DESKTOP-J420CGP MINGW64 ~/Desktop/Mern stack (master)
+$ git push -u origin master
+Enumerating objects: 31, done.
+Counting objects: 100% (31/31), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (31/31), 183.45 KiB | 3.28 MiB/s, done.
+Total 31 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Prasathlonelyking/mernstack.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+MURUGAN@DESKTOP-J420CGP MINGW64 ~/Desktop/Mern stack (master)
+$
