@@ -193,3 +193,6 @@ nav .menu{
     text-align: center;
     color:darkslategrey
 }
+body {
+  background-color: #d9d9d9; /* Changed background color */
+}

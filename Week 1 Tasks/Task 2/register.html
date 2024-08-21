@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="menu">
+        <div class="logo">
+          <a href="index.html">Task 2</a>
+        </div>
+        <ul>
+          
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="register.html">REGISTER</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+    <div class="center">
+      <h1>Register</h1>
+      <form id="registerForm">
+        <div class="txt_field">
+          <input type="text" id="name" required>
+          <span></span>
+          <label>Name</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" id="email" required>
+          <span></span>
+          <label>Email Id</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" id="password" required>
+          <span></span>
+          <label>Password</label>
+        </div>
+        
+        <input type='submit' name='register_submit' value="Register">
+        <div class="signup_link">
+         Already a member? <a href='login.html'>Login</a>
+        </div>
+      </form>
+    </div>
+    <script>
+      async function postApi(event) {
+          event.preventDefault(); 
+
+          let name = document.getElementById("name").value;
+          let email = document.getElementById("email").value;
+          let password = document.getElementById("password").value;
+
+          let data = {
+              "name": name,
+              "email": email,
+              "password": password
+          };
+
+          let res = await fetch("https://reqres.in/api/users", {
+              method: "POST",
+              body: JSON.stringify(data),
+              headers: {
+                  "Content-Type": "application/json"
+              }
+          });
+
+          let json = await res.json();
+          console.log(json);
+      }
+
+      document.getElementById("registerForm").addEventListener("submit", postApi);
+    </script>
+  </body>
+</html>
