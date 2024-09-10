@@ -1,0 +1,68 @@
+.div1{
+    background-color: red;
+}
+.div2{
+    background-color: blue;
+    color: white;
+    
+}
+h2{
+   
+    color: blue;
+}
+.s1 h2{
+    color: red;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.menu li{
+    margin: 5px;
+    
+}
+.active{
+    background-color: yellowgreen;
+}
+.content div{
+    height: 50vh;
+    width: 25%;
+    border:1px solid #000;
+    
+}
+.div .content{
+    flex-direction: row;
+}
+
+@media (max-width:606px) {
+    .menu{
+        flex-direction: column;
+    }
+    body{
+        background-color: blue;
+    }
+    
+}
+@media (max-width:100%) {
+    .content{
+        flex-direction: column;
+    }   
+}
+a:hover{
+
+   color: rgb(0, 177, 53); 
+   font-style: italic;
+   
+}
+.center {
+    margin: auto;
+    width: 30%;
+    border: 3px solid rgb(102, 102, 102);
+    padding: 10px;
+}
+.center h1 {
+    margin: auto;
+    width: 15%;
+    
+}
